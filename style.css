@@ -1,0 +1,63 @@
+body{
+    background-color: yellow;   
+}
+
+.container{
+    /* border: 2px solid black; */
+    /* margin-top: 1px; */
+}
+.row{
+    /* border: 1px solid rgb(125, 103, 103); */
+}
+.wrapper{
+background-image: url("https://images.unsplash.com/photo-1595418917831-ef942bd9f9ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrfGVufDB8fDB8fHww");
+color: black;
+background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-link{
+    width: 200px;
+    margin-left: auto;
+}
+
+.wrapper span{
+    font-size: 80px;
+}
+
+#joke,#ip,#university{
+    overflow: auto;
+    width: 50vw;
+    /* margin-bottom: 20px ; */
+    font-size: 30px;
+    height: 50vh;
+    padding: 10px 20%;
+    box-shadow: 0 0 2px rgb(10px, 2px, 4px);
+    color: wheat;
+}
+
+#ip{
+    font-size: 35px;
+}
+
+.wrapper #btnjoke,
+#btnip,#btnuniversity{
+    margin-top: -20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#inputbox{
+    border-radius: 5px;
+}
+
+
+#header{
+    background: black;
+    margin-bottom: 10px;
+}
+
+#university{
+    font-size: 20px;
+
+}

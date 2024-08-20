@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun app</title>
+    <link rel="stylesheet" href="/codes/bootstrap/css/bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="/codes/bootstrap/css/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+
+        <div class="row " id="header">
+            <div class="col-md-12 py-3 ">
+                <ul class="nav nav-pills justify-content-around text-center">
+                    <li class="nav-item">
+                        <a href="#Joke" class="nav-link active" data-toggle="tab">Jokes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#IP" class="nav-link" data-toggle="tab">IP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#University" class="nav-link" data-toggle="tab">University</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="content">
+            <div class="tab-content">
+
+                <div class="tab-pane show active" id="Joke">
+                    <div class="col-sm-12 wrapper  text-center ">
+                        <span class="">&#128514;</span>
+                       <div> <p id="joke" >get jokes...</p></div>
+                        <button class="btn btn-primary" id="btnjoke">Get Joke</button>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="IP">
+                    <div class="col-sm-12 wrapper  text-center ">
+                        <span>&#128246;</span>
+                        <p id="ip" >get your current ip...</p>
+                        <button class="btn btn-primary" id="btnip">Get IP</button>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="University">
+                    <div class="col-sm-12 wrapper text-center ">
+                        <span>&#128203;</span>
+                        <p id="university">get indian universities list...</p>
+                        <button class="btn btn-primary" id="btnuniversity">Get University</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- </div> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
