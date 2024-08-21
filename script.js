@@ -9,6 +9,9 @@ const btnip = document.querySelector("#btnip");
 const universitycontainer = document.querySelector("#university");
 const university_url = `http://universities.hipolabs.com/search?country=India`;
 const btnuniversity = document.querySelector("#btnuniversity");
+const gendercontainer = document.querySelector("#gender");
+const searchinput = document.querySelector("#search");
+const btngender = document.querySelector("#btngender");
 
 // get joke
 
@@ -51,3 +54,18 @@ let getcollages = () => {
 };
 
 btnuniversity.addEventListener("click", getcollages);
+
+ let getgender = () => {
+    let query = searchinput.value;
+     fetch(`https://api.genderize.io?name=${query}`)
+    // console.log(query);
+    .then((response) => response.json())
+    // let data = await response.json();
+    .then((data) =>{
+        console.log(data);
+        gendercontainer.innerHTML = `${data.name} <span><small>&#128073;</small></span> ${data.gender}`;
+    })
+
+}
+
+btngender.addEventListener("click", getgender);
